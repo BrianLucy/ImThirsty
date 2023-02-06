@@ -1,1 +1,7 @@
-
+body{
+    background: rgb(112,128,144);
+background: linear-gradient(0deg, rgba(112,128,144,1) 0%, rgba(255,255,255,1) 49%, rgba(218,92,52,1) 100%, rgba(221,105,68,1) 100%, rgba(255,255,255,1) 100%, rgba(218,92,52,1) 100%, rgba(237,239,241,1) 100%);
+    /* background: rgb(112,128,144);
+    background: linear-gradient(0deg, rgba(112,128,144,1) 0%, rgba(255,255,255,1) 100%, rgba(146,229,255,1) 100%); */
+    font-family: 'Didact Gothic', sans-serif
+}
