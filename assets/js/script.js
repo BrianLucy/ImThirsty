@@ -1,4 +1,7 @@
-fetch('https://api.openbrewerydb.org/breweries', {
+var state = document.getElementById("state").value;
+var type = document.getElementById("type").value;
+
+fetch(`https://api.openbrewerydb.org/breweries?by_state=${state}&per_page=50`, {
   method: 'GET',
   credentials: 'same-origin',
   per_page: 50,
@@ -13,7 +16,7 @@ fetch('https://api.openbrewerydb.org/breweries', {
     console.log(data);
     var breweries = data;
     var filteredbrew = breweries.filter(function(brewery) {
-        return brewery.brewery_type === "micro";
+        return brewery.brewery_type === ${type};
     })
   console.log(filteredbrew);
         
