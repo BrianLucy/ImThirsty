@@ -1,5 +1,5 @@
-var state = document.getElementById("state").value;
-var type = document.getElementById("type").value;
+var state = document.getElementById("#state").value;
+var type = document.getElementById("#type").value;
 
 fetch(`https://api.openbrewerydb.org/breweries?by_state=${state}&per_page=50`, {
   method: 'GET',
