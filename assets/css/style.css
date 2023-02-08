@@ -5,3 +5,7 @@ background: linear-gradient(0deg, rgba(112,128,144,1) 0%, rgba(255,255,255,1) 49
     background: linear-gradient(0deg, rgba(112,128,144,1) 0%, rgba(255,255,255,1) 100%, rgba(146,229,255,1) 100%); */
     font-family: 'Didact Gothic', sans-serif
 }
+
+nav {
+    font-size: larger;
+}
