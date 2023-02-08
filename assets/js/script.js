@@ -35,5 +35,16 @@ fetch(`https://api.openbrewerydb.org/breweries?by_state=${state}&per_page=50`, {
   $("#type").autocomplete({
      source: types,
   });    
-  
-  });
+  var handleFormSubmit = function (event) {
+    event.preventDefault();
+    var stateInput = stateInputEl.val();
+    var typeInput = typeInputEl.val();
+    if (!stateInput || !typeInput) {
+      console.log('You need to fill out the form!');
+      return;
+    }
+    printBrew(stateInput, typeInput);
+    stateInputEl.val('');
+    typeInputEl.val('');
+  }
+});
