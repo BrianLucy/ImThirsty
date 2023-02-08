@@ -25,7 +25,7 @@ fetch(`https://api.openbrewerydb.org/breweries?by_state=${state}&per_page=50`, {
   console.log(filteredbrew);
   var printBrew = function (brewery) {
     var breweryEl = $('<li>');
-    var listBrewery = name.street.city.state.postal_code.phone.website_url;
+    var listBrewery = name, street, city, state, postal_code, phone, website_url;
     listEl.addClass('brewery-list-item').text(listBrewery);
     listEl.appendTo(breweryListEl);
   }
@@ -40,7 +40,7 @@ fetch(`https://api.openbrewerydb.org/breweries?by_state=${state}&per_page=50`, {
     var stateInput = stateInputEl.val();
     var typeInput = typeInputEl.val();
     if (!stateInput || !typeInput) {
-      console.log('You need to fill out the form!');
+      console.log('Pick a state and type!');
       return;
     }
     printBrew(stateInput, typeInput);
