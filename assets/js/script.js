@@ -12,7 +12,7 @@ fetch(`https://api.openbrewerydb.org/breweries?by_state=${state}&per_page=50`, {
  })
 
 
- .then(function (response) {
+.then(function (response) {
   return response.json();
   
 })
@@ -29,12 +29,14 @@ fetch(`https://api.openbrewerydb.org/breweries?by_state=${state}&per_page=50`, {
     listEl.addClass('brewery-list-item').text(listBrewery);
     listEl.appendTo(breweryListEl);
   }
+  $function () {
     $("#state").autocomplete({
-    source: states,
-  });
-  $("#type").autocomplete({
+     source: states,
+   });
+    $("#type").autocomplete({
      source: types,
-  });    
+    }); 
+  };  
   var handleFormSubmit = function (event) {
     event.preventDefault();
     var stateInput = stateInputEl.val();
@@ -48,3 +50,5 @@ fetch(`https://api.openbrewerydb.org/breweries?by_state=${state}&per_page=50`, {
     typeInputEl.val('');
   }
 });
+
+formEl.on('submit', handleFormSubmit);
