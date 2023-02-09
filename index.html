@@ -67,61 +67,83 @@
   </section>
   <!------ Section: Courses ------>
   <section class="Brewskis" id="courses">
-    <h2>Example</h2>
-    <p class="section-desc">
-      Example Text
-    </p>
-    <div class="row">
-      <div class="column">
-        <img src="" />
-        <h3>Example</h3>
-        <p>
-          Example Text
-        </p>
-        <div class="Brew-btn">
-          <button class="btn secondary-btn">Learn More</button>
+    <div class="tile is-ancestor">
+      <div class="tile is-vertical is-8">
+        <div class="tile">
+          <div class="tile is-parent is-vertical">
+            <article class="tile is-child notification is-primary">
+              <p class="title">Vertical...</p>
+              <p class="subtitle">Top tile</p>
+            </article>
+            <article class="tile is-child notification is-warning">
+              <p class="title">...tiles</p>
+              <p class="subtitle">Bottom tile</p>
+            </article>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child notification is-info">
+              <p class="title">View Maps!</p>
+              <p class="subtitle">With an image</p>
+              <figure class="image is-4by3">
+                <img src="https://bulma.io/images/placeholders/640x480.png">
+              </figure>
+            </article>
+          </div>
+        </div>
+        
+              <!-- Content -->
+            </div>
+          </article>
         </div>
       </div>
-      <div class="column">
-        <img src="" />
-        <h3>Example</h3>
-        <p>
-          Example
-        </p>
-        <div class="Brewski-btn">
-          <button class="btn secondary-btn">Learn More</button>
-        </div>
+      <div class="tile is-parent">
+        <article class="tile is-child notification is-success">
+          <div class="content">
+            <p class="title">About Hoppy Trails</p>
+            <p class="subtitle">With even more content</p>
+            <div class="content">
+              <!-- Content -->
+            </div>
+          </div>
+        </article>
       </div>
     </div>
   </section>
 
   <!------ Footer ------>
   <footer>
-    <div class="row footer-about">
-      <h3>Hoppy Trails</h3>
-      <p>
-        All rights reserved, we will sue.
-      </p>
-      <div class="social-links">
-        <a href="#">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="#">
-          <i class="fab fa-facebook-f"></i>
-        </a>
+    <div class="row primary">
+      <div class="column about">
+        <h3>Hoppy Trails</h3>
+      </div>
+      <div class="column links">
+        <h3></h3>
+     
+      </div>
+      <div class="column subscribe">
+        <h3></h3>
+        <div>
+          <input type="email" placeholder="Your email id here" />
+          <button>Submit</button>
+        </div>
       </div>
     </div>
-    <div class="row footer-contact">
-      <div class="column">
-        <h4>Phone No</h4>
-        <p>(xxx)xxx-xxxx</p>
+
+    <div class="row secondary">
+      <div>
+        <p>
+          <i class="fas fa-phone-alt"></i>
+        </p>
+        <p>(xxx-xxx-xxxx)</p>
       </div>
-      <div class="column">
-        <h4>Email</h4>
-        <p>HoppyTrails@gmail.com</p>
+      <div>
+        <p><i class="fas fa-map-marker-alt"></i></p>
+        <p>Atlanta, GA.</p>
       </div>
     </div>
   </footer>
+</body>
+</html>
 
   <!------ Script ------>
   <script src="./assets/js/script.js"></script>
