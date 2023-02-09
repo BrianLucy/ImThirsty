@@ -5,7 +5,7 @@
 // var stateInput = $('#state').val();
 // var typeInput = $('#type').val();
 // var state = 'georgia';
-
+var APIKey = 'AIzaSyBvIvqYLhRUxpdWtBQWG51NuOXUsXzlfhE';
 var searchBtn = document.getElementById('search-btn');
 // var searchBtn = $('#search-btn');
 
@@ -27,9 +27,26 @@ function getBrewerybyState() {
         .then(function (data) {
             console.log(data);
         })
+        mapApi(data);
 };
 
 searchBtn.addEventListener('click', getBrewerybyState);
+
+function mapApi(data) {
+    var location = data.state
+    var mapqueryURL = `https://www.google.com/maps/embed/v1/place?key=AIzaSyBvIvqYLhRUxpdWtBQWG51NuOXUsXzlfhE
+    &q=${location}`
+
+    fetch(mapqueryURL)
+
+    .then(function(response) {
+        return response.json();
+    })
+
+    .then(function (data) {
+        
+    })
+}
 
 // searchBtn.on('click', function () {
 //     console.log("testing search btn");
