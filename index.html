@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hoppy Trails</title>
-    <!------ Stylesheet ------>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hoppy Trails</title>
+  <!------ Stylesheet ------>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- Bulma Library -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <!-- DAYJS Library -->
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+  integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
+</head>
 
 <body>
   <!------ Header ------>
   <header class="has-text-centered">
-    <h1 class="title is-1 pt-3">Hoppy🍻Trails</h1>
+    <h1 class="title is-1 pt-4">Hoppy🍻Trails</h1>
   </header>
   <!-- navbar -->
-  <nav class="level mt-3">
+  <nav class="level mt-5">
     <p class="level-item has-text-centered">
       <a class="link is-info" href="#">Home</a>
     </p>
@@ -25,30 +29,28 @@
       <a class="link is-info">Favorites</a>
     </p>
     <p class="level-item has-text-centered">
-</p>
-<p class="level-item has-text-centered">
-  <a class="link is-info">Pics</a>
-</p>
-<p class="level-item has-text-centered">
-  <a class="link is-info">Contact</a>
-</p>
-</nav>
-    <!------ Section: Hero ------>
-    <section class="column is-vcentered">
-
-      <img src="" id="header-shape" />
-
-      <div class="column is-7">
-        <h1>Looking to satisfy a thirst?</h1>
-        <div class="field has-addons">
-        <input class="input is-danger" type="text" placeholder="Search Brewery🔎">
+      <a class="link is-info">Map</a>
+    </p>
+    <p class="level-item has-text-centered">
+      <a class="link is-info">Pics</a>
+    </p>
+    <p class="level-item has-text-centered">
+      <a class="link is-info">Contact</a>
+    </p>
+  </nav>
+  <!------ Section: Hero ------>
+  <section class="column is-vcentered">
+    <div class="column is-5">
+      <h1>Looking to satisfy a thirst?</h1>
+      <div class="field has-addons">
+        <input class="input is-danger" id="search-input" type="text" placeholder="Search State🔎">
         <p class="control">
           <button class="button" id="search-btn"> Search </button>
         </p>
-        </div>
       </div>
+    </div>
   </section>
-  
+
   <!------ Section: Features ------>
   <section class="features" id="features">
     <h2>Find A Brewery Near You.</h2>
@@ -181,3 +183,31 @@
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
+
+</p>
+<div class="social-links">
+  <a href="#">
+    <i class="fab fa-github"></i>
+  </a>
+  <a href="#">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+</div>
+</div>
+<div class="row footer-contact">
+  <div class="column">
+    <h4>Phone No</h4>
+    <p>(xxx)xxx-xxxx</p>
+  </div>
+  <div class="column">
+    <h4>Email</h4>
+    <p>HoppyTrails@gmail.com</p>
+  </div>
+</div>
+</footer>
+
+<script src="./assets/js/script.js"></script>
+</body>
+
+</html>
+
