@@ -8,45 +8,63 @@
 var APIKey = 'AIzaSyBvIvqYLhRUxpdWtBQWG51NuOXUsXzlfhE';
 var searchBtn = document.getElementById('search-btn');
 // var searchBtn = $('#search-btn');
+// var stateInput = document.getElementById('search-input').value;
 
 
 function getBrewerybyState() {
-    var breweryInput = document.getElementById('search-input').value;
+    var stateInput = document.getElementById('search-input').value;
 
-    fetch(`https://api.openbrewerydb.org/breweries?by_state=${breweryInput}&per_page=50`, {
+    fetch(`https://api.openbrewerydb.org/breweries?by_state=${stateInput}&per_page=50`, {
         method: 'GET',
         credentials: 'same-origin',
         per_page: 50,
     })
-
-
         .then(function (response) {
             return response.json();
         })
-
         .then(function (data) {
             console.log(data);
+            mapApi(data);
         })
-        mapApi(data);
 };
 
-searchBtn.addEventListener('click', getBrewerybyState);
+//searchBtn.addEventListener('click', getBrewerybyState);
 
 function mapApi(data) {
-    var location = data.state
-    var mapqueryURL = `https://www.google.com/maps/embed/v1/place?key=AIzaSyBvIvqYLhRUxpdWtBQWG51NuOXUsXzlfhE
-    &q=${location}`
+    console.log(data);
+    document.getElementById('googleapi').innerHTML=''
+    $("#googleapi").html(`<iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBvIvqYLhRUxpdWtBQWG51NuOXUsXzlfhE&q=${data[0].state}">`)
+    // console.log(stateInput, "line 37 mapApi");
+    // var location = data[0].state;
+    // console.log(location);
+    // var mapqueryURL = `https://www.google.com/maps/embed/v1/place?key=AIzaSyBvIvqYLhRUxpdWtBQWG51NuOXUsXzlfhE&q=${location}`
 
-    fetch(mapqueryURL)
-
-    .then(function(response) {
-        return response.json();
-    })
-
-    .then(function (data) {
-        
-    })
+    // console.log(mapqueryURL);
+    // let responseClone
+    // fetch(mapqueryURL).then(function(response){
+    //     responseClone = response.clone()
+    //     return response.json()
+    // }).then(function (data) {
+    //     console.log(data)
+    // }, function (rejectionReason) {
+    //     console.log("DAS ERROR: ", rejectionReason, responseClone)
+    //     responseClone.text().then(function(bodyText) {
+    //         console.log("pirates: ", bodyText)
+    //     })
+    // })
+ 
+        // .then(function (response) {            
+        //     return response.json();
+        // })
+        // .then(function () {
+        //     var googleMap = document.getElementById('googleapi');
+        //     googleMap.textContent = ""
+    //        googleMap.innerHTML = `<iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen
+    //    referrerpolicy="no-referrer-when-downgrade" src=${mapqueryURL}>
+    //  </iframe>`
+        //})
 }
+searchBtn.addEventListener('click', getBrewerybyState);
 
 // searchBtn.on('click', function () {
 //     console.log("testing search btn");
