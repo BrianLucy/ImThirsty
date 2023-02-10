@@ -27,6 +27,31 @@ function getBrewerybyState() {
         .then(function (data) {
             console.log(data);
         })
+        .finally(function (data) {
+            for (var i = 0; i < 6; i++)
+            var name = data[i].name;
+            var street = data[i].street;
+            var city = data[i].city;
+            var state = data[i].state;
+            var postal_code = data[i].postal_code;
+            var phone = data[i].phone;
+            var website_url = data[i].website_url;
+            var latitude = data[i].latitude;
+            var longitude = data[i].longitude;
+            let div = document.createElement('div');
+            let p = document.createElement('p');
+            var breweryCard = document.div.addClass('brewery-card');
+            breweryCard.appendChild(p).text(name);
+            breweryCard.appendChild(p).text(street);
+            breweryCard.appendChild(p).text(city);
+            breweryCard.appendChild(p).text(state);
+            breweryCard.appendChild(p).text(postal_code);
+            breweryCard.appendChild(p).text(phone);
+            breweryCard.appendChild(p).text(website_url);
+           
+            
+
+        })
         mapApi(data);
 };
 
