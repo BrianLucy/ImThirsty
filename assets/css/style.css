@@ -57,6 +57,48 @@ footer {
     border-radius: 5px;
     margin-bottom: 5px;
   }
+  button{
+    width: 225px;
+    height: 80px;
+    position: center;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(#18588d);
+    border: none;
+    font-family: 'Poppins',sans-serif;
+    color: #020202;
+    font-size: 40px;
+    letter-spacing: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+button:after{
+    content: "";
+    position: center;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(
+        45deg,
+       
+    );
+    background-size: 200% 100%;
+    background-position: 165% 0;
+    transition: 0.7s;
+}
+button:hover:after{
+    background-position: -20% 0;
+}
+button:hover{
+    box-shadow: 15px 30px 32px rgba(0,0,0,0.25);
+    transform: translateY(-10px);
+}
+  /*
   button {
     background-color: #2a8ded;
     color: #ffffff;
@@ -77,3 +119,4 @@ footer {
   .row.secondary div:hover {
     background-color: #25262e;
   }
+
