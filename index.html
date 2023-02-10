@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -24,12 +24,21 @@
   <nav class="level mt-5">
     <p class="level-item has-text-centered">
    
+
       <button class="button">Home</button>
+
+      <button class="button" 
+      onclick="window.location.href = '';">
+          Home
+      </button>
+      
+
     </p>
      
     </p>
     <p class="level-item has-text-centered">
    
+
       <button class="button">Favorites</button>
     </p>
     <p class="level-item has-text-centered">
@@ -43,6 +52,33 @@
     <p class="level-item has-text-centered">
    
       <button class="button">Contact</button>
+
+      <button class="button" 
+      onclick="window.location.href = 'http://127.0.0.1:5500/comingSoon.html';">
+          Favorites
+      </button>
+    </p>
+    <p class="level-item has-text-centered">
+   
+      <button class="button" 
+      onclick="window.location.href = '';">
+          Maps
+      </button>
+    </p>
+    <p class="level-item has-text-centered">
+   
+      <button class="button" 
+      onclick="window.location.href = 'http://127.0.0.1:5500/comingSoon.html';">
+          Pics
+      </button>
+    </p>
+    <p class="level-item has-text-centered">
+   
+      <button class="button" 
+      onclick="window.location.href = '';">
+          Contact
+      </button>
+
     </p>
   </nav>
 
@@ -66,14 +102,10 @@
         <div class="tile">
           <div class="tile is-parent">
             <article class="tile is-child notification is-info">
-
-              <div id="googleapi">
               <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen
                 referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBvIvqYLhRUxpdWtBQWG51NuOXUsXzlfhE
-                  &q=Georgia">
+                  &q=Augusta">
               </iframe>
-              </div>
-
               <p class="title">View Maps!</p>
               </figure>
             </article>
@@ -106,9 +138,6 @@
       </article>
     </div>
   </section>
-
-          <!-- Added link to the jQuery library -->
-          <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
   <!------ Script ------>
   <script src="./assets/js/script.js"></script>
