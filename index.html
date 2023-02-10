@@ -23,19 +23,26 @@
   <!-- navbar -->
   <nav class="level mt-5">
     <p class="level-item has-text-centered">
-      <a class="link is-info" href="#">Home</a>
+   
+      <button class="button">Home</button>
+    </p>
+     
     </p>
     <p class="level-item has-text-centered">
-      <a class="link is-info">Favorites</a>
+   
+      <button class="button">Favorites</button>
     </p>
     <p class="level-item has-text-centered">
-      <a class="link is-info">Map</a>
+   
+      <button class="button">Maps</button>
     </p>
     <p class="level-item has-text-centered">
-      <a class="link is-info">Pics</a>
+   
+      <button class="button">Pics</button>
     </p>
     <p class="level-item has-text-centered">
-      <a class="link is-info">Contact</a>
+   
+      <button class="button">Contact</button>
     </p>
   </nav>
 
@@ -59,21 +66,22 @@
         <div class="tile">
           <div class="tile is-parent">
             <article class="tile is-child notification is-info">
-              <p class="title">View Maps!</p>
-              <!-- Map -->
+
               <div id="googleapi">
-                <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen
-                  referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBvIvqYLhRUxpdWtBQWG51NuOXUsXzlfhE
+              <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen
+                referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBvIvqYLhRUxpdWtBQWG51NuOXUsXzlfhE
                   &q=Georgia">
-                </iframe>
+              </iframe>
               </div>
 
+              <p class="title">View Maps!</p>
+              </figure>
             </article>
           </div>
-          <div class="tile is-parent is-vertical" id="brewery-list-rtn">
+          <div class="tile is-parent is-vertical">
             <article class="tile is-child notification is-danger">
-              <p class="title">Breweries will populate here!</p>
-              <p class="subtitle">Check the list now!</p>
+              <p class="title">Vertical...</p>
+              <p class="subtitle">Top tile</p>
             </article>
           </div>
         </div>
@@ -87,7 +95,10 @@
           <p class="title">Hoppy Trails</p>
           <div>
             <input type="email" placeholder="Your email id here" />
-            <button>Submit</button>
+            <p class="level-item has-text-centered">
+   
+              <button class="button">Submit</button>
+            </p>
             <p>(xxx-xxx-xxxx)</p>
             <p>Atlanta, GA.</p>
           </div>
@@ -96,8 +107,8 @@
     </div>
   </section>
 
-  <!-- Added link to the jQuery library -->
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+          <!-- Added link to the jQuery library -->
+          <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
   <!------ Script ------>
   <script src="./assets/js/script.js"></script>
