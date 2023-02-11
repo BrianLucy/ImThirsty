@@ -1,104 +1,106 @@
-body{
-    background: rgb(112,128,144);
-background: linear-gradient(0deg, rgba(112,128,144,1) 0%, rgba(255,255,255,1) 49%, rgb(183, 176, 174) 100%, rgb(141, 134, 131) 100%, rgba(255,255,255,1) 100%, rgb(168, 161, 158) 100%, rgba(237,239,241,1) 100%);
-    /* background: rgb(112,128,144);
+html {
+  background: rgb(112, 128, 144);
+  background: linear-gradient(0deg, rgb(143, 191, 184) 0%, rgba(255, 255, 255, 1) 49%, rgb(183, 176, 174) 100%, rgba(255, 255, 255, 1) 100%, rgb(168, 161, 158) 100%, rgba(237, 239, 241, 1) 100%);
+  /* background: rgb(112,128,144);
     background: linear-gradient(0deg, rgba(112,128,144,1) 0%, rgba(255,255,255,1) 100%, rgba(146,229,255,1) 100%); */
-    font-family: 'Didact Gothic', sans-serif
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+#appTitle {
+  font-weight: 600;
+  margin: 30px;
+}
+
+img {
+  margin-left: 800px;
+  border-radius: 5%;
 }
 
 nav {
-    font-size: larger;
+  font-size: larger;
 }
 
-nav {
-    font-size: larger;
+.row {
+  padding: 2em 1em;
 }
 
-footer {
-    background-color: #121315;
-    color: #ffffff;
-    font-size: 16px;
-  }
-  footer * {
-    font-family: "Poppins", sans-serif;
-    box-sizing: border-box;
-    border: none;
-    outline: none;
-  }
-  .row {
-    padding: 2em 1em;
-  }
-  .row.primary {
-    display: grid;
-    grid-template-columns: 2fr 1fr 2fr;
-    align-items: stretch;
-  }
-  .column {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 0 2em;
-    min-height: 15em;
-  }
-  h3 {
-    width: 100%;
-    text-align: left;
-    color: #2a8ded;
-    font-size: 1.6em;
-    white-space: nowrap;
-  }
- 
- 
-  input,
-  button {
-    font-size: 1em;
-    padding: 1em;
-    width: 100%;
-    border-radius: 5px;
-    margin-bottom: 5px;
-  }
-  button{
-    width: 225px;
-    height: 80px;
-    position: center;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(#18588d);
-    border: none;
-    font-family: 'Poppins',sans-serif;
-    color: #020202;
-    font-size: 40px;
-    letter-spacing: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: 0.5s;
+.row.primary {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  align-items: stretch;
 }
-button:after{
-    content: "";
-    position: center;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background: linear-gradient(
-        45deg,
-       
+
+.column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2em;
+  min-height: 15em;
+}
+
+h3 {
+  width: 100%;
+  text-align: left;
+  color: #2a8ded;
+  font-size: 1.6em;
+  white-space: nowrap;
+}
+
+
+input,
+button {
+  font-size: 1em;
+  padding: 1em;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+button {
+  width: 225px;
+  height: 80px;
+  position: center;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(#18588d);
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  color: #020202;
+  font-size: 40px;
+  letter-spacing: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+button:after {
+  content: "";
+  position: center;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(45deg,
+
     );
-    background-size: 200% 100%;
-    background-position: 165% 0;
-    transition: 0.7s;
+  background-size: 200% 100%;
+  background-position: 165% 0;
+  transition: 0.7s;
 }
-button:hover:after{
-    background-position: -20% 0;
+
+button:hover:after {
+  background-position: -20% 0;
 }
-button:hover{
-    box-shadow: 15px 30px 32px rgba(0,0,0,0.25);
-    transform: translateY(-10px);
+
+button:hover {
+  box-shadow: 15px 30px 32px rgba(0, 0, 0, 0.25);
+  transform: translateY(-10px);
 }
-  /*
+
+/*
   button {
     background-color: #2a8ded;
     color: #ffffff;
@@ -119,4 +121,3 @@ button:hover{
   .row.secondary div:hover {
     background-color: #25262e;
   }
-

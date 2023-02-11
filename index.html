@@ -18,69 +18,41 @@
 <body>
   <!------ Header ------>
   <header class="has-text-centered">
-    <h1 class="title is-1 pt-4">Hoppy🍻Trails</h1>
+    <h1 id="appTitle" class="title is-1 pt-4">Hoppy🍻Trails</h1>
   </header>
+
+  <img src="./assets/images/brewery-prod.png">
+  
   <!-- navbar -->
   <nav class="level mt-5">
     <p class="level-item has-text-centered">
-   
-
-      <button class="button" 
-      onclick="window.location.href = '';">
-          Home
-      </button>
-      
-
-    </p>
-     
-    </p>
-    <p class="level-item has-text-centered">
-   
-
-      <button class="button">Favorites</button>
-    </p>
-    <p class="level-item has-text-centered">
-   
-      <button class="button">Maps</button>
-    </p>
-    <p class="level-item has-text-centered">
-   
-      <button class="button">Pics</button>
-    </p>
-    <p class="level-item has-text-centered">
-   
-      <button class="button">Contact</button>
-
-      <button class="button" 
-      onclick="window.location.href = 'http://127.0.0.1:5500/comingSoon.html';">
-          Favorites
+      <button class="button" onclick="window.location.href = '';">
+        Home
       </button>
     </p>
     <p class="level-item has-text-centered">
-   
-      <button class="button" 
-      onclick="window.location.href = '';">
-          Maps
+      <button class="button" onclick="window.location.href = 'http://127.0.0.1:5500/comingSoon.html';">
+        Favorites
       </button>
     </p>
     <p class="level-item has-text-centered">
-   
-      <button class="button" 
-      onclick="window.location.href = 'http://127.0.0.1:5500/comingSoon.html';">
-          Pics
+      <button class="button" onclick="window.location.href = '';">
+        Maps
       </button>
     </p>
     <p class="level-item has-text-centered">
-   
-      <button class="button" 
-      onclick="window.location.href = '';">
-          Contact
+      <button class="button" onclick="window.location.href = 'http://127.0.0.1:5500/comingSoon.html';">
+        Pics
       </button>
-
+    </p>
+    <p class="level-item has-text-centered">
+      <button class="button" onclick="window.location.href = '';">
+        Contact
+      </button>
     </p>
   </nav>
 
-  <!------ Section: search bar ------>
+  <!------ Search bar ------>
   <section class="column is-vcentered">
     <div class="column is-5">
       <h1>Looking to satisfy a thirst? Find a brewery near you.</h1>
@@ -94,20 +66,22 @@
   </section>
 
   <!------ Section: Tiles ------>
+  <!-- Map -->
   <section class="brewskis" id="courses">
-    <div class="tile is-ancestor">
+    <div class="tile is-ancestor mt-0">
       <div class="tile is-vertical is-8">
         <div class="tile">
           <div class="tile is-parent">
             <article class="tile is-child notification is-info">
               <p class="title">View Maps!</p>
               <div id="googleapi">
-                <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen
-                referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBvIvqYLhRUxpdWtBQWG51NuOXUsXzlfhE
+                <!-- <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen
+                  referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBvIvqYLhRUxpdWtBQWG51NuOXUsXzlfhE
                   &q=Georgia">
-                </iframe>
+                </iframe> -->
               </div>
-            
+
+              <!-- List of breweries -->
             </article>
           </div>
           <div class="tile is-parent is-vertical" id="brewery-list-rtn">
@@ -121,27 +95,26 @@
     </div>
 
     <!-- Footer Tile -->
-    <div class="tile is-parent">
+    <footer class="tile is-parent">
       <article class="tile is-child notification is-success">
         <div class="content">
           <p class="title">Hoppy Trails</p>
           <div>
             <input type="email" placeholder="Your email id here" />
             <p class="level-item has-text-centered">
-   
-              <button class="button">Submit</button>
+              <button class="button"> Submit </button>
             </p>
             <p>(xxx-xxx-xxxx)</p>
-            <p>Atlanta, GA.</p>
+            <p>Atlanta, GA</p>
           </div>
         </div>
       </article>
-    </div>
+    </footer>
   </section>
 
-  <!------ Script ------>
   <!-- Added link to the jQuery library -->
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!------ Script ------>
   <script src="./assets/js/script.js"></script>
 </body>
 
