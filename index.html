@@ -95,23 +95,74 @@
     <footer class="tile is-parent">
       <article class="tile is-child notification is-success">
         <div class="content">
-          <p class="title">Hoppy Trails</p>
-          <div>
-            <input type="email" placeholder="Your email id here" />
-            <p class="level-item has-text-centered">
-              <button class="button"> Submit </button>
-            </p>
-            <p>(xxx-xxx-xxxx)</p>
-            <p>Atlanta, GA</p>
+          <p class="title">STAY CONNECTED!</p>
+
+          <p>Today is <span id="todayDate"></span></p>
+          <P>Click button to recieve newsletter and updates</P>
+          <!-- Trigger/Open The Modal -->
+          <button id="myBtn">Enter e-mail address</button>
+
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>STAY CONNECTED</h2>
+              </div>
+              <div class="modal-body">
+                <p>Please enter your e-mail</p>
+
+                <form action="/action_page.php">
+                  <label for="city">here -></label>
+                  <input type="text" id="city" name="city"><br><br>
+                  <input type="submit" value="Submit">
+                </form>
+              </div>
+              <div class="modal-footer">
+                <h3>Thank You! Cheers! 🍺</h3>
+              </div>
+            </div>
+
           </div>
-        </div>
+
+          <P>Click button to recieve newsletter and updates</P>
+          <!-- Trigger/Open The Modal -->
+<button id="myBtn">enter email address</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>STAY CONNECTED</h2>
+    </div>
+    <div class="modal-body">
+      <p>Please enter your email</p>
+      
+      <form action="/action_page.php">
+  <label for="city">here =></label>
+  <input type="text" id="city" name="city"><br><br>
+  <input type="submit" value="Submit">
+  </form>
+    </div>
+    <div class="modal-footer">
+      <h3>Thank You! Cheers!</h3>
+    </div>
+  </div>
+
+</div>
+
       </article>
     </footer>
   </section>
 
   <!-- Added link to the jQuery library -->
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <!------ Script ------>
+  <!------ Script ------>
   <script src="./assets/js/script.js"></script>
 </body>
 
