@@ -18,8 +18,6 @@ function getBrewerybyState() {
             mapApi(data);
             breweryCall(data);
         })
-
-    
         
 };
 
