@@ -20,16 +20,6 @@ nav {
   font-size: larger;
 }
 
-.row {
-  padding: 2em 1em;
-}
-
-.row.primary {
-  display: grid;
-  grid-template-columns: 2fr 1fr 2fr;
-  align-items: stretch;
-}
-
 .column {
   width: 100%;
   display: flex;
@@ -99,28 +89,6 @@ button:hover {
   box-shadow: 15px 30px 32px rgba(0, 0, 0, 0.25);
   transform: translateY(-10px);
 }
-
-/*
-  button {
-    background-color: #2a8ded;
-    color: #ffffff;
-  }
-  .row.secondary {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-  }
-  .row.secondary i {
-    font-size: 1.8em;
-    color: #2a8ded;
-  }
-  .row.secondary div {
-    padding: 1em 0;
-    width: 100%;
-  }
-  .row.secondary div:hover {
-    background-color: #25262e;
-  }
 
 
 /* The Modal (background) */
