@@ -2,7 +2,7 @@
 
 ## Description
 
-This app will guide any avid beer drinker or any curious beer enthusiast search for breweries of many types in any state. The finder can lead to discovering new brewries and even types of beer that we do not know about. This application will solve curious beer-seeking minds that like to travel, or even stay at home to find a brewery in the user's state!. 
+This app will guide any avid beer drinker or any curious beer enthusiast search for breweries of many types in any state. The finder can lead to discovering new brewries and even types of beer that we do not know about. This application will solve curious beer-seeking minds that like to travel, or even stay at home to find a brewery in the user's state!
 
 ## Installation
 
