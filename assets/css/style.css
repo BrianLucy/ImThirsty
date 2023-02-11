@@ -90,30 +90,6 @@ button:hover {
   transform: translateY(-10px);
 }
 
-
-/*
-  button {
-    background-color: #2a8ded;
-    color: #ffffff;
-  }
-  .row.secondary {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-  }
-  .row.secondary i {
-    font-size: 1.8em;
-    color: #2a8ded;
-  }
-  .row.secondary div {
-    padding: 1em 0;
-    width: 100%;
-  }
-  .row.secondary div:hover {
-    background-color: #25262e;
-  }
-
-
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */

@@ -54,7 +54,9 @@ function breweryCall(data) {
 
 searchBtn.addEventListener('click', getBrewerybyState);
 
-$("#todayDate").text(dayjs().format(' dddd, MMMM DD, YYYY'));// Get the modal
+$("#todayDate").text(dayjs().format(' dddd, MMMM DD, YYYY'));
+
+// Get the modal
 var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
