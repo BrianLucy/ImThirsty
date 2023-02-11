@@ -93,16 +93,36 @@
     <footer class="tile is-parent">
       <article class="tile is-child notification is-success">
         <div class="content">
-          <p class="title">Hoppy Trails</p>
-          <div>
-            <input type="email" placeholder="Your email id here" />
-            <p class="level-item has-text-centered">
-              <button class="button"> Submit </button>
-            </p>
-            <p>(xxx-xxx-xxxx)</p>
-            <p>Atlanta, GA</p>
-          </div>
-        </div>
+          <p class="title">STAY CONNECTED!</p>
+          <P>Click button to recieve newsletter and updates</P>
+          <!-- Trigger/Open The Modal -->
+<button id="myBtn">enter email address</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>STAY CONNECTED</h2>
+    </div>
+    <div class="modal-body">
+      <p>Please enter your email</p>
+      
+      <form action="/action_page.php">
+  <label for="city">here =></label>
+  <input type="text" id="city" name="city"><br><br>
+  <input type="submit" value="Submit">
+  </form>
+    </div>
+    <div class="modal-footer">
+      <h3>Thank You! Cheers!</h3>
+    </div>
+  </div>
+
+</div>
+
       </article>
     </footer>
   </section>
