@@ -51,9 +51,10 @@ function breweryCall(data) {
                 breweryCard.append($('<p class="card-text">').text(website_url));
     }
 };
+
 searchBtn.addEventListener('click', getBrewerybyState);
 
-// Get the modal
+$("#todayDate").text(dayjs().format(' dddd, MMMM DD, YYYY'));// Get the modal
 var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
