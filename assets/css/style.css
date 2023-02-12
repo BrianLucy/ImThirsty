@@ -16,7 +16,7 @@ img {
   border-radius: 5%;
   width: 500px;
   height: 300px;
-  margin-left: 40px
+  margin-left: 40px;
   position: relative;
   left: 50px;
   display: flex;
@@ -134,6 +134,29 @@ button:hover {
   top: 0px;
 }
 
+.singlecard {
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  
+}
+.card-title {
+  color:rgba(255, 255, 255, 1);
+  font-size: 25px;
+}
+.card-text{
+  color:rgba(255, 255, 255, 1);
+  font-size: 15px
+}
+.card-link{
+  color:rgba(255, 255, 255, 1);
+  font-size: 15px;
+  cursor: pointer;
+  text-decoration: underline;
+}
 
 /* The Modal (background) */
 .modal {

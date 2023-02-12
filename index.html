@@ -27,32 +27,32 @@
   </div>
   <!-- navbar -->
   <nav class="level mt-5">
-    <p class="level-item has-text-centered">
-      <button class="button" onclick="window.location.href = '';">
+    <a class="level-item has-text-centered">
+      <button class="button" onclick="window.location.href = './index.html';">
         Home
       </button>
-    </p>
-    <p class="level-item has-text-centered">
-      <button class="button" onclick="window.location.href = 'http://127.0.0.1:5500/comingSoon.html';">
+    </a>
+    <a class="level-item has-text-centered">
+      <button class="button" onclick="window.location.href = './assets/comingSoon.html'";>
         Favorites
       </button>
-    </p>
-    <p class="level-item has-text-centered">
-      <button class="button" onclick="window.location.href = 'http://127.0.0.1:5500/comingSoon.html';">
+    </a>
+    <a class="level-item has-text-centered">
+      <button class="button" onclick="window.location.href = './assets/comingSoon.html'";>
         Pics
       </button>
-    </p>
-    <p class="level-item has-text-centered">
-      <button class="button" onclick="window.location.href = '';">
+    </a>
+    <a class="level-item has-text-centered">
+      <button class="button" onclick="window.location.href = './assets/comingSoon.html'";>
         Contact
       </button>
-    </p>
+    </a>
   </nav>
 
   <!------ Search bar ------>
-  <section class="column is-vcentered">
+  <section class="column is-centered">
     <div class="column is-5">
-      <h1>Looking to satisfy a thirst? Find a brewery near you.</h1>
+      <h1>Hello,<span id='stored-name'></span> Looking to satisfy a thirst? Find a brewery near you.</h1>
       <div class="field has-addons">
         <input class="input is-danger" id="search-input" type="text" placeholder="Search State🔎">
         <p class="control">
@@ -100,7 +100,7 @@
           <p>Today is <span id="todayDate"></span></p>
           <P>Click button to recieve newsletter and updates</P>
           <!-- Trigger/Open The Modal -->
-          <button id="myBtn">Enter e-mail address</button>
+          <button id="myBtn">Be Notified</button>
 
           <!-- The Modal -->
           <div id="myModal" class="modal">
@@ -112,12 +112,11 @@
                 <h2>STAY CONNECTED</h2>
               </div>
               <div class="modal-body">
-                <p>Please enter your e-mail</p>
-
                 <form action="/action_page.php">
-                  <label for="city">here -></label>
-                  <input type="text" id="city" name="city"><br><br>
-                  <input type="submit" value="Submit">
+                  <label for="notifyBtn">here -></label>
+                  <input type="text" id="name" placeholder="Enter your name">Type your name</input><br><br>
+                  <input type="text" id="email" placeholder="Enter your email">Type your email</input><br><br>
+                  <input type="submit" id="notifyBtn" value="Submit">
                 </form>
               </div>
               <div class="modal-footer">

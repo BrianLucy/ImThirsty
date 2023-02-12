@@ -2,6 +2,7 @@
 var APIKey = 'AIzaSyBvIvqYLhRUxpdWtBQWG51NuOXUsXzlfhE';
 var searchBtn = document.getElementById('search-btn');
 
+
 function getBrewerybyState() {
     var stateInput = document.getElementById('search-input').value;
 
@@ -39,14 +40,15 @@ function breweryCall(data) {
                 var website_url = data[i].website_url;
                 var latitude = data[i].latitude;
                 var longitude = data[i].longitude;
-                var breweryCard = $('#brewery-list-rtn').append($('<div>').addClass('card').attr('style', 'background-color: #34A8DA', 'margin: 10px','width: 18rem;'))
+                var breweryCard = $('<div>').addClass('singlecard tile is-child').attr('style', 'background-color: #34A8DA', 'margin: 10px','width: 18rem;');
+                $('#brewery-list-rtn').append(breweryCard);
                 breweryCard.append($('<h3 class="card-title">').text(name));
                 breweryCard.append($('<p class="card-text">').text(street));
                 breweryCard.append($('<p class="card-text">').text(city));
                 breweryCard.append($('<p class="card-text">').text(state));
                 breweryCard.append($('<p class="card-text">').text(postal_code));
                 breweryCard.append($('<p class="card-text">').text(phone));
-                breweryCard.append($('<p class="card-text">').text(website_url));
+                breweryCard.append($(`<a class="card-link" href="`+website_url+`">`).text(website_url));
     }
 };
 
@@ -80,3 +82,34 @@ window.onclick = function(event) {
   }
 }
 
+function storagebin() {
+    var emailList = [];
+    var nameList = [];
+    var name = $('#name').val();
+    var email = $('#email').val();
+    var checkArray = emailList.includes(email);
+   
+    if (checkArray === true) {
+        return
+    } 
+    else {
+      emailList.push(email);
+      nameList.push(name);
+    localStorage.setItem('email', JSON.stringify(emailList));
+    localStorage.setItem('name', JSON.stringify(nameList));
+    };
+    
+};
+$('#notifyBtn').click(function() {
+    storagebin();
+});
+  
+function nameCall(){
+    var nameList = JSON.parse(localStorage.getItem('name'));
+    if (nameList === null) {
+        return
+    }
+    else
+    $('#stored-name').append(" "+ nameList + ", ");
+}
+nameCall();
