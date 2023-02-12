@@ -56,25 +56,26 @@ searchBtn.addEventListener('click', getBrewerybyState);
 
 $("#todayDate").text(dayjs().format(' dddd, MMMM DD, YYYY'));
 
-
 // Get the modal
-var modal = document.getElementById('myModal');
+var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
-var modalBtn = document.getElementById('myBtn');
-
+var btn = document.getElementById("myBtn");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal 
-modalBtn.onclick = function() {
+btn.onclick = function() {
   modal.style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the modal
+function closemodal() {
+    modal.style.display = "none";
+}
 span.onclick = function() {
-  modal.style.display = "none";
+  closemodal();
 }
 
 // When the user clicks anywhere outside of the modal, close it
@@ -83,8 +84,7 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-
-//localstorage
+// Setting up function to store email and name in local storage
 function storagebin() {
     var emailList = [];
     var nameList = [];
@@ -103,10 +103,12 @@ function storagebin() {
     };
     
 };
+// When the user clicks submit, the email and name are stored in local storage
 $('#notifyBtn').click(function() {
     storagebin();
+    closemodal();
 });
-  
+ // Function to call name from local storage 
 function nameCall(){
     var nameList = JSON.parse(localStorage.getItem('name'));
     if (nameList === null) {
