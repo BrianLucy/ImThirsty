@@ -22,8 +22,11 @@
   </header>
 
   <div id="head-card" class="container is-flex">
-  <p id="bio" >This app will guide any avid beer drinker or any curious beer enthusiast search for breweries of many types in any state. The finder can lead to discovering new brewries and even types of beer that we do not know about. This application will solve curious beer-seeking minds that like to travel, or even stay at home to find a brewery in the user's state! </p>
-  <img src="./assets/images/brewery-prod.png">
+    <p id="bio">This app will guide any avid beer drinker or any curious beer enthusiast search for breweries of many
+      types in any state. The finder can lead to discovering new brewries and even types of beer that we do not know
+      about. This application will solve curious beer-seeking minds that like to travel, or even stay at home to find a
+      brewery in the user's state! </p>
+    <img src="./assets/images/brewery-prod.png">
   </div>
   <!-- navbar -->
   <nav class="level mt-5">
@@ -33,17 +36,17 @@
       </button>
     </a>
     <a class="level-item has-text-centered">
-      <button class="button" onclick="window.location.href = './assets/comingSoon.html'";>
+      <button class="button" onclick="window.location.href = './assets/comingSoon.html'" ;>
         Favorites
       </button>
     </a>
     <a class="level-item has-text-centered">
-      <button class="button" onclick="window.location.href = './assets/comingSoon.html'";>
+      <button class="button" onclick="window.location.href = './assets/comingSoon.html'" ;>
         Pics
       </button>
     </a>
     <a class="level-item has-text-centered">
-      <button class="button" onclick="window.location.href = './assets/comingSoon.html'";>
+      <button class="button" onclick="window.location.href = './assets/contactUs.html'" ;>
         Contact
       </button>
     </a>
@@ -98,6 +101,7 @@
           <p class="title">STAY CONNECTED!</p>
 
           <p>Today is <span id="todayDate"></span></p>
+
           <P>Click button to recieve newsletter and updates</P>
           <!-- Trigger/Open The Modal -->
           <button id="myBtn">Be Notified</button>
@@ -107,23 +111,23 @@
 
             <!-- Modal content -->
             <div class="modal-content">
-              <div class="modal-header">
+              <div id="modal-header">
                 <span class="close">&times;</span>
                 <h2>STAY CONNECTED</h2>
               </div>
               <div class="modal-body">
-                <form action="/action_page.php">
-                  <label for="notifyBtn">here -></label>
-                  <input type="text" id="name" placeholder="Enter your name">Type your name</input><br><br>
-                  <input type="text" id="email" placeholder="Enter your email">Type your email</input><br><br>
-                  <input type="submit" id="notifyBtn" value="Submit">
-                </form>
+                <!-- <form action="/action_page.php"> -->
+                <label for="notifyBtn">here -></label>
+                <input type="text" id="name" placeholder="Enter your name">Type your name</input><br><br>
+                <input type="text" id="email" placeholder="Enter your email">Type your email</input><br><br>
+                <input type="submit" id="notifyBtn" value="Submit">
+                <!-- </form> -->
               </div>
-              <div class="modal-footer">
+              <div id="modal-footer">
                 <h3>Thank You! Cheers! 🍺</h3>
               </div>
             </div>
-            
+
           </div>
       </article>
     </footer>

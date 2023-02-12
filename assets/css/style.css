@@ -1,6 +1,6 @@
 html {
   background: rgb(112, 128, 144);
-  background: linear-gradient(0deg, rgb(143, 191, 184) 0%, rgba(255, 255, 255, 1) 49%, rgb(183, 176, 174) 100%, rgba(255, 255, 255, 1) 100%, rgb(168, 161, 158) 100%, rgba(237, 239, 241, 1) 100%);
+  background: linear-gradient(0deg, rgb(143, 191, 184) 0%, rgba(255, 255, 255, 1) 49%, rgb(146, 142, 141) 100%, rgba(255, 255, 255, 1) 100%, rgb(146, 138, 134) 100%, rgba(237, 239, 241, 1) 100%);
   /* background: rgb(112,128,144);
     background: linear-gradient(0deg, rgba(112,128,144,1) 0%, rgba(255,255,255,1) 100%, rgba(146,229,255,1) 100%); */
   font-family: 'Didact Gothic', sans-serif;
@@ -98,6 +98,8 @@ button:hover {
   box-shadow: 15px 30px 32px rgba(0, 0, 0, 0.25);
   transform: translateY(-10px);
 }
+
+/*Top card with image and info*/
 #head-card {
   font-size: 1.2em;
   color: black;
@@ -158,19 +160,24 @@ button:hover {
   text-decoration: underline;
 }
 
+#myBtn {
+  font-size: medium;
+}
+
+
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  display: none; /*Hidden by default */
+  position: fixed; /*Stay in place */
+  z-index: 1; /*Sit on top */
+  padding-top: 100px; /*Location of the box*/
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  width: 100%; /*Full width */
+  height: 100%; /*Full height */
+overflow: auto; /*Enable scroll if needed*/
+ background-color: rgb(0,0,0); /* Fallback color */
+ background-color: rgba(0,0,0,0.4); /*Black w/ opacity*/
 }
 
 /* Modal Content */
@@ -214,17 +221,24 @@ button:hover {
   cursor: pointer;
 }
 
-.modal-header {
+#modal-header {
   padding: 2px 16px;
-  background-color: #5cb85c;
+  background-color: #00d1b2;
   color: white;
 }
 
-.modal-body {padding: 2px 16px;}
-
-.modal-footer {
+.modal-body {
   padding: 2px 16px;
-  background-color: #5cb85c;
+}
+
+#modal-footer {
   color: white;
+  padding: 2px 16px;
+  background-color: #00d1b2;
+}
+
+#notifyBtn:hover {
+  border-width: 4px;
+  cursor: pointer;
 }
 
