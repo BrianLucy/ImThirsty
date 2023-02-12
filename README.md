@@ -15,7 +15,26 @@ The user can search for breweries by state. The user will enter the state in the
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
 
 ![alt text](assets/images/screenshot.png)
+
+SCREEN SHOT OF WIREFRAME FOR PROPOSAL
 ![image](https://user-images.githubusercontent.com/116689598/218334825-14ca0fe4-3099-4cfa-8c0a-4ec6d8425c91.png)
+
+SCREEN SHOT OF PAGES
+TOP
+![hoppy trails page top](https://user-images.githubusercontent.com/116689598/218336563-c19311fb-e9df-4a29-816d-50da365d947a.png)
+
+BOTTOM
+![hoppy trails bottom](https://user-images.githubusercontent.com/116689598/218336577-be00cc16-520e-4ba0-a475-2643df3feebf.png)
+
+FAVORITES AND PICTURES
+![fav and pic page](https://user-images.githubusercontent.com/116689598/218336584-3058de53-2294-430a-8ead-89687c8e3364.png)
+
+CONTACT US
+![contact us page](https://user-images.githubusercontent.com/116689598/218336590-1902b36f-ae8f-4999-9676-704ec9debad7.png)
+
+STAY CONNECTED MODAL
+![stay connected modal](https://user-images.githubusercontent.com/116689598/218336605-351ffab1-8b66-4c41-9c0b-82e8508cc808.png)
+
 
 ## Credits
 
