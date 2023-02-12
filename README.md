@@ -15,6 +15,7 @@ The user can search for breweries by state. The user will enter the state in the
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
 
 ![alt text](assets/images/screenshot.png)
+![image](https://user-images.githubusercontent.com/116689598/218334825-14ca0fe4-3099-4cfa-8c0a-4ec6d8425c91.png)
 
 ## Credits
 
