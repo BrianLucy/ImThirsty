@@ -56,17 +56,19 @@ searchBtn.addEventListener('click', getBrewerybyState);
 
 $("#todayDate").text(dayjs().format(' dddd, MMMM DD, YYYY'));
 
+
 // Get the modal
-var modal = document.getElementById("myModal");
+var modal = document.getElementById('myModal');
 
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+var modalBtn = document.getElementById('myBtn');
+
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal 
-btn.onclick = function() {
+modalBtn.onclick = function() {
   modal.style.display = "block";
 }
 
@@ -82,6 +84,7 @@ window.onclick = function(event) {
   }
 }
 
+//localstorage
 function storagebin() {
     var emailList = [];
     var nameList = [];
