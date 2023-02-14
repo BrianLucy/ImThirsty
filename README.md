@@ -14,7 +14,8 @@ The user can search for breweries by state. The user will enter the state in the
 
 LINKS
 link to deployed page: https://brianlucy.github.io/ImThirsty/
-Link to Repo: 
+
+Link to Repo: https://github.com/BrianLucy/ImThirsty
 
 SCREEN SHOT OF WIREFRAME FOR PROPOSAL
 ![image](https://user-images.githubusercontent.com/116689598/218334825-14ca0fe4-3099-4cfa-8c0a-4ec6d8425c91.png)
