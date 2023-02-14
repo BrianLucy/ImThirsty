@@ -12,9 +12,9 @@ To start off the building of this application, we had to breakdown what needed t
 
 The user can search for breweries by state. The user will enter the state in the search bar which will return a list of breweries to the right column and will pull the searched state in the map in the left column. The application will display a list of seven breweries in the state. The links at the top will provide favorite/popular breweries among the users. User will be able to input email information if he or she would like to hear about updated popular breweries. Pictures will be provided at the top link as well of breweries across the state. Contact bar will be at the bottom regarding functionality of the application. 
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
-
-![alt text](assets/images/screenshot.png)
+LINKS
+link to deployed page: https://brianlucy.github.io/ImThirsty/
+Link to Repo: 
 
 SCREEN SHOT OF WIREFRAME FOR PROPOSAL
 ![image](https://user-images.githubusercontent.com/116689598/218334825-14ca0fe4-3099-4cfa-8c0a-4ec6d8425c91.png)
